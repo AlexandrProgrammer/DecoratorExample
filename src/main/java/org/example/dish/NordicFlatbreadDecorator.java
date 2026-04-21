@@ -1,18 +1,18 @@
-package dish;
+package org.example.dish;
 
-public class NordicFlatbreadDecorator extends org.example.dish.DishDecorator {
+public class NordicFlatbreadDecorator extends DishDecorator {
 
-    public NordicFlatbreadDecorator(org.example.dish.Dish wrappee) {
+    public NordicFlatbreadDecorator(Dish wrappee) {
         super(wrappee);
     }
 
     @Override
     public String getDescription() {
-        return super.Wrappee().getDescription() + " + Нордская лепёшка";
+        return wrappee.getDescription() + " + Нордская лепёшка";
     }
 
     @Override
     public int getCost() {
-        return super.Wrappee().getCost() + 7;
+        return wrappee.getCost() + 7;
     }
 }

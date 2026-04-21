@@ -1,18 +1,18 @@
-package dish;
+package org.example.dish;
 
-public class DoubleVenisonDecorator extends org.example.dish.DishDecorator {
+public class DoubleVenisonDecorator extends DishDecorator {
 
-    public DoubleVenisonDecorator(org.example.dish.Dish wrappee) {
+    public DoubleVenisonDecorator(Dish wrappee) {
         super(wrappee);
     }
 
     @Override
     public String getDescription() {
-        return super.Wrappee().getDescription() + " + Двойная порция оленины";
+        return wrappee.getDescription() + " + Двойная порция оленины";
     }
 
     @Override
     public int getCost() {
-        return super.Wrappee().getCost() + 20;
+        return wrappee.getCost() + 20;
     }
 }

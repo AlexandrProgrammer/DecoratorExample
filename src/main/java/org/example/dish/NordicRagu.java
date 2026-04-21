@@ -1,6 +1,6 @@
-package dish;
+package org.example.dish;
 
-public class NordicRagu implements org.example.dish.Dish {
+public class NordicRagu implements Dish {
 
     @Override
     public String getDescription() {

@@ -1,29 +1,11 @@
 package org.example.ui;
 
-import org.example.dish.Dish;
-import org.example.dish.DoubleVenisonDecorator;
-import org.example.dish.FireSauceDecorator;
-import org.example.dish.NordicFlatbreadDecorator;
-import org.example.dish.NordicRagu;
-import org.example.dish.SnowBerriesDecorator;
+import org.example.dish.*;
 import org.example.model.Order;
 import org.example.model.OrderHistory;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.SwingConstants;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Font;
+import javax.swing.*;
+import java.awt.*;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
@@ -44,7 +26,7 @@ public class OrderFrame extends JFrame {
     private final OrderHistory orderHistory;
 
     public OrderFrame() {
-        super("Нордское рагу — оформление заказа");
+        super("Нордское рагу кафе");
 
         orderHistory = new OrderHistory();
 
@@ -170,7 +152,7 @@ public class OrderFrame extends JFrame {
         JOptionPane.showMessageDialog(
                 this,
                 "Заказ оформлен:\n" + order,
-                "Успех",
+                "Готово",
                 JOptionPane.INFORMATION_MESSAGE
         );
     }

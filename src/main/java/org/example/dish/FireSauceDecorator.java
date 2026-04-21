@@ -1,18 +1,18 @@
-package dish;
+package org.example.dish;
 
-public class FireSauceDecorator extends org.example.dish.DishDecorator {
+public class FireSauceDecorator extends DishDecorator {
 
-    public FireSauceDecorator(org.example.dish.Dish wrappee) {
+    public FireSauceDecorator(Dish wrappee) {
         super(wrappee);
     }
 
     @Override
     public String getDescription() {
-        return super.Wrappee().getDescription() + " + Огненный соус";
+        return wrappee.getDescription() + " + Огненный соус";
     }
 
     @Override
     public int getCost() {
-        return super.Wrappee().getCost() + 10;
+        return wrappee.getCost() + 10;
     }
 }

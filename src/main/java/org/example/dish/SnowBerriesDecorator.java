@@ -1,18 +1,18 @@
-package dish;
+package org.example.dish;
 
-public class SnowBerriesDecorator extends org.example.dish.DishDecorator {
+public class SnowBerriesDecorator extends DishDecorator {
 
-    public SnowBerriesDecorator(org.example.dish.Dish wrappee) {
+    public SnowBerriesDecorator(Dish wrappee) {
         super(wrappee);
     }
 
     @Override
     public String getDescription() {
-        return super.Wrappee().getDescription() + " + Снежные ягоды";
+        return wrappee.getDescription() + " + Снежные ягоды";
     }
 
     @Override
     public int getCost() {
-        return super.Wrappee().getCost() + 5;
+        return wrappee.getCost() + 5;
     }
 }
