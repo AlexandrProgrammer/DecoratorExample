@@ -8,11 +8,11 @@ public class NordicFlatbreadDecorator extends DishDecorator {
 
     @Override
     public String getDescription() {
-        return wrappee.getDescription() + " + Нордская лепёшка";
+        return super.getDescription() + " + Нордская лепёшка";
     }
 
     @Override
     public int getCost() {
-        return wrappee.getCost() + 7;
+        return super.getCost() + 7;
     }
 }

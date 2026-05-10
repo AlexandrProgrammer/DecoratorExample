@@ -8,11 +8,11 @@ public class SnowBerriesDecorator extends DishDecorator {
 
     @Override
     public String getDescription() {
-        return wrappee.getDescription() + " + Снежные ягоды";
+        return super.getDescription() + " + Снежные ягоды";
     }
 
     @Override
     public int getCost() {
-        return wrappee.getCost() + 5;
+        return super.getCost() + 5;
     }
 }

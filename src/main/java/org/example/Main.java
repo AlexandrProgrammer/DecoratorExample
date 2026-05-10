@@ -5,7 +5,7 @@ import org.example.ui.OrderFrame;
 import javax.swing.SwingUtilities;
 
 public class Main {
-     static void main(String[] args) {
+     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new OrderFrame().setVisible(true));
     }
 }

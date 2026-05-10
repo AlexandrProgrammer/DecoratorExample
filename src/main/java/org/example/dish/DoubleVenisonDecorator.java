@@ -8,11 +8,11 @@ public class DoubleVenisonDecorator extends DishDecorator {
 
     @Override
     public String getDescription() {
-        return wrappee.getDescription() + " + Двойная порция оленины";
+        return super.getDescription() + " + Двойная порция оленины";
     }
 
     @Override
     public int getCost() {
-        return wrappee.getCost() + 20;
+        return super.getCost() + 20;
     }
 }

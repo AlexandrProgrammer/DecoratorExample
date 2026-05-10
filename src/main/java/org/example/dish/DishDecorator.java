@@ -7,7 +7,13 @@ public abstract class DishDecorator implements Dish {
         this.wrappee = wrappee;
     }
 
-    protected Dish Wrappee() {
-        return wrappee;
+    @Override
+    public String getDescription() {
+        return wrappee.getDescription();
+    }
+
+    @Override
+    public int getCost() {
+        return wrappee.getCost();
     }
 }
