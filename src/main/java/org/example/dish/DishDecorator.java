@@ -1,9 +1,9 @@
 package org.example.dish;
 
 public abstract class DishDecorator implements Dish {
-    protected final Dish wrappee;
+    private final Dish wrappee;
 
-    public DishDecorator(Dish wrappee) {
+    protected DishDecorator(Dish wrappee) {
         this.wrappee = wrappee;
     }
 

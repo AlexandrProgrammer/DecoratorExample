@@ -8,11 +8,11 @@ public class FireSauceDecorator extends DishDecorator {
 
     @Override
     public String getDescription() {
-        return wrappee.getDescription() + " + Огненный соус";
+        return super.getDescription() + " + Огненный соус";
     }
 
     @Override
     public int getCost() {
-        return wrappee.getCost() + 10;
+        return super.getCost() + 10;
     }
 }
